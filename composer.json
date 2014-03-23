@@ -1,0 +1,34 @@
+{
+	"name": "dimassrio/personal-site",
+	"description": "personal website for dimassrio.me",
+	"authors": [
+		{
+			"name": "Dimas Satrio",
+			"email": "dimassrio@outlook.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"repositories":
+		{
+			"wp-theme":{
+            "type": "package",
+            "package": {
+                "type": "wordpress-theme",
+                "name": "roots/roots",
+                "version": "6.5.0",
+                "source": {
+                    "url": "git@github.com:dimassrio/roots.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                },
+                "require": {
+                    "composer/installers": "*"
+                }
+            }
+        }
+	},
+	"require": {
+		"composer/installers": "~1.0",
+		"roots/roots":"6.5.0"
+	}	
+}
